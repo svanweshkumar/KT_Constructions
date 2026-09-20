@@ -43,7 +43,7 @@ async function handlePost(request: Request) {
       return json({ error: "Missing RESEND_API_KEY configuration" }, { status: 500 });
     }
 
-    const fromEmail = process.env["RESEND_FROM_EMAIL"] ?? "enquiries@ktconstruction.com";
+    const fromEmail = process.env["RESEND_FROM_EMAIL"] ?? "onboarding@resend.dev";
     const toEmail = process.env["RESEND_TO_EMAIL"] ?? "ashokkt1994@gmail.com";
     const resend = new Resend(resendApiKey);
 

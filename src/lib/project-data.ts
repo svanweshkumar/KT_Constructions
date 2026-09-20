@@ -12,8 +12,7 @@ import buildSixAsset from "@/assets/Build6.png";
 export const heroImage = heroAsset;
 export const logoLight = logoLightAsset;
 export const logoDark = logoDarkAsset;
-export const siteUrl = import.meta.env.VITE_SITE_URL ?? "https://www.ktconstruction.in";
-
+export const siteUrl = import.meta.env["VITE_SITE_URL"] ?? "https://ktconstructions.netlify.app";
 export const projects = [
   {
     id: "urban-residence-1",

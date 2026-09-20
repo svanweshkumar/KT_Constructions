@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ktconstruction.in/sitemap.xml
+Sitemap: https://ktconstructions.netlify.app/sitemap.xml
