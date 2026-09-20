@@ -73,13 +73,14 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
+    head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "KT Construction" },
       { name: "description", content: "Engineering-led construction in Shivamogga." },
       { name: "author", content: "KT Construction" },
+      { name: "google-site-verification", content: "vd_5VVpMoYEodzXuxxhnWGZvHwiLsHvTARQieILshSc" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
