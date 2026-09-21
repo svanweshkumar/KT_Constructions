@@ -82,7 +82,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "KT Construction" },
       { name: "google-site-verification", content: "vd_5VVpMoYEodzXuxxhnWGZvHwiLsHvTARQieILshSc" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "KT Construction" },
+      { property: "og:title", content: "KT Construction" },
+      { property: "og:description", content: "Engineering-led construction in Shivamogga." },
+      { property: "og:url", content: "https://ktconstructions.netlify.app/" },
+      { property: "og:image", content: "https://ktconstructions.netlify.app/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "KT Construction" },
+      { name: "twitter:description", content: "Engineering-led construction in Shivamogga." },
+      { name: "twitter:image", content: "https://ktconstructions.netlify.app/og-image.png" },
     ],
     links: [
       {
@@ -90,6 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/favicon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
@@ -102,6 +111,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
   }),
+    
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
